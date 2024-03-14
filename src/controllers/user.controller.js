@@ -3,7 +3,6 @@ const User = require('../models/User');
 const bcrypt = require("bcrypt");
 const sendEmail = require('../utils/sendEmail');
 const EmailCode = require('../models/EmailCode');
-const { captureRejectionSymbol } = require('events');
 const jwt = require('jsonwebtoken');
 
 const getAll = catchError(async(req, res) => {

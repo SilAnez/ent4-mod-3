@@ -6,7 +6,7 @@ const userRouter = express.Router();
 
 userRouter.route('/users')
     .get(verifyJWT,getAll)
-    .post(verifyJWT,create);
+    .post(create);
 
 userRouter.route('/users/verify/:code')
      .get(verifyEmail);
